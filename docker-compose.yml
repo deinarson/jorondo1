@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  builder:
+    command: jekyll build
+    image: jekyll
+    build: .
+    volumes:
+      - ./:/srv/jekyll:consistent
